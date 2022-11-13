@@ -1,9 +1,12 @@
 import { Center, Text, Icon} from 'native-base'
 import Logo from '../assets/logo.svg'
+import { useAuth } from '../hooks/useAuth'
 import {Fontisto} from '@expo/vector-icons'
 import { Button } from '../components/Button'
 
 export function SignIn (){
+
+    const { signIn } = useAuth()
 
     return(
         <Center flex={1} bgColor="gray.900" p={6}>
@@ -13,6 +16,7 @@ export function SignIn (){
                 type={"SECONDARY"}
                 title="ENTRAR COM O GOOGLE"
                 leftIcon={<Icon as={Fontisto} color={'white'} name={"google"} size={"md"} />}
+                onPress={signIn}
             />
 
             <Text color="white">
