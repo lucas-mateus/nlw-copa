@@ -8,7 +8,7 @@ export function Find() {
     <VStack flex={1} bgColor="gray.900" >
         <Header title={"Buscar por código"} showBackButton />
         
-        <VStack mt={8} mx={8} alignItems={"center"}>
+        <VStack mt={8} mx={5} alignItems={"center"}>
 
             <Heading textAlign={'center'} color={'white'} fontSize={'xl'} fontFamily={'heading'}>
                 Encontre um bolão através de seu código único   
