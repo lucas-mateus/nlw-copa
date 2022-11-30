@@ -15,7 +15,6 @@ export function Button ({title,type = "PRIMARY", ...rest}:Props){
         backgroundColor={type === "SECONDARY" ? 'red.500' : 'yellow.500'}
         fontSize="md"
         rounded="sm"
-        textTransform={"uppercase"}
         _pressed={{
             bg: type === 'SECONDARY' ? 'red.600' : 'yellow.600'
         }}
@@ -29,6 +28,7 @@ export function Button ({title,type = "PRIMARY", ...rest}:Props){
         <Text
             fontSize="sm"
             fontFamily="heading"
+            textTransform={"uppercase"}
             color={type === 'SECONDARY' ? 'white': 'black'}
         >
             {title}
